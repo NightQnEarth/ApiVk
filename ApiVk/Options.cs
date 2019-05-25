@@ -10,8 +10,13 @@ namespace ApiVk
     {
         [Value(0, MetaName = "target_user_id",
             Required = true,
-            HelpText = "VK-id of target user.")]
-        public string TargetUserId { get; set; }
+            HelpText = "user_id of target user.")]
+        public ulong TargetUserId { get; set; }
+
+        [Option('a', "app_id",
+            Default = (ulong)6996875,
+            HelpText = "APP_ID of your application.")]
+        public ulong AppId { get; set; }
 
         [Option('f', "friends",
             Default = false,
@@ -21,6 +26,6 @@ namespace ApiVk
         [Option('p', "photo_albums",
             Default = false,
             HelpText = "Print photo albums names of target user.")]
-        public int PhotoAlbums { get; set; }
+        public bool PhotoAlbums { get; set; }
     }
 }
