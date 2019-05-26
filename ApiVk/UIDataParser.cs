@@ -22,9 +22,10 @@ namespace ApiVk
             Parser.Default.ParseArguments<Options>(args)
                   .WithParsed(inputOptions =>
                   {
-                      options.TargetUserId = inputOptions.TargetUserId;
+                      options.TargetUserScreenName = inputOptions.TargetUserScreenName;
                       options.AppId = inputOptions.AppId;
                       options.Friends = inputOptions.Friends;
+                      options.Videos = inputOptions.Videos;
                       options.PhotoAlbums = inputOptions.PhotoAlbums;
                   })
                   .WithNotParsed(errors => Environment.Exit(0));

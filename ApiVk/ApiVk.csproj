@@ -112,7 +112,8 @@
         <Compile Include="Options.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
-        <Compile Include="Request.cs" />
+        <Compile Include="ApiRequest.cs" />
+        <Compile Include="ResultGenerator.cs" />
         <Compile Include="UIDataParser.cs" />
     </ItemGroup>
     <ItemGroup>
